@@ -1,0 +1,30 @@
+/* CSS FILE: style.css */
+:root{
+  --bg1:#ff9a9e;
+  --bg2:#fecfef;
+  --accent:#6d3cff;
+  --muted:rgba(255,255,255,0.85);
+  font-family: Inter, sans-serif;
+}
+
+html,body{height:100%;margin:0}
+body{
+  display:grid;place-items:center;min-height:100%;
+  background:linear-gradient(135deg,var(--bg1),var(--bg2));
+  color:#111;
+}
+
+.container{
+  width:min(400px,96vw);padding:28px;border-radius:24px;background:rgba(255,255,255,0.15);backdrop-filter: blur(10px);
+  box-shadow:0 10px 30px rgba(13,12,20,0.25);
+  text-align:center;
+}
+
+h1{margin:0;font-size:32px;color:var(--muted);}
+.typewriter{margin-top:18px;min-height:100px;font-size:18px;color:rgba(255,255,255,0.95);}
+.actions{display:flex;justify-content:center;gap:12px;margin-top:18px}
+.btn{padding:12px 18px;border-radius:12px;font-weight:600;cursor:pointer;border:2px solid rgba(255,255,255,0.16);
+  background:transparent;color:var(--muted);transition:transform .18s ease, box-shadow .18s ease;}
+.btn:active{transform:translateY(2px) scale(.997)}
+.btn-yes{border-color:var(--accent);color:var(--accent);}
+.final-msg{margin-top:20px;font-size:20px;color:var(--accent);display:none;}
